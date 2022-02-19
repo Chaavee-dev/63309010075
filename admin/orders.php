@@ -64,7 +64,7 @@
                                     $sql1 = "SELECT * FROM tb_status";
                                     $result1 = mysqli_query($conn, $sql1);
                                     while($row1=mysqli_fetch_assoc($result1)) { ?>
-                                    <option value="?status=<?=$row1["name_second"]?>" <?= $row1["name_second"] == $status ? 'selected' :''?>><?=$row1["name_second"]?> : <?=//number_format($row_count["count"])?></option>
+                                    <option value="?status=<?=$row1["name_second"]?>" <?= $row1["name_second"] == $status ? 'selected' :''?>><?=$row1["name_second"]?></option>
                                 <?php }?>
                             </select>
                         </div>
